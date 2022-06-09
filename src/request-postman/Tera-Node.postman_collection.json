@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "2fe7409d-8fd4-49a5-81cf-70298cfb75ed",
+		"name": "Tera",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "19840448"
+	},
+	"item": [
+		{
+			"name": "All Filmes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/movies/all"
+			},
+			"response": []
+		},
+		{
+			"name": "All Ghibli",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/movies/ghibli"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Filme",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Teste de filme\",\r\n    \"genre\": \"Ação\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/movies/create/movie"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Filme",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Teste de filme\",\r\n    \"genre\": \"Ação\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/movies/create"
+			},
+			"response": []
+		},
+		{
+			"name": "Home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/movies/"
+			},
+			"response": []
+		}
+	]
+}
