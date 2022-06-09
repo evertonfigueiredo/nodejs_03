@@ -11,6 +11,7 @@ app.use(express.json())
 
 // Definir a rota principal do nosso projeto
 const movieRoutes = require("./routes/moviesRoutes")
+// console.log("Variavel movies que importa arquivo de rotas da app.js", movieRoutes)
 
 //Rota de acesso para a API
 app.use("/movies", movieRoutes)
